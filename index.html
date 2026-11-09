@@ -8,9 +8,11 @@
 </head>
 <body>
 
-  <!-- Navigation Bar -->
+  <!-- Top Navigation Bar -->
   <header class="navbar glass">
-    <div class="logo">⚡ Cloudlessera</div>
+    <a href="#" class="logo-link">
+      <img src="images/logo.png" alt="Cloudlessera Logo" class="nav-logo">
+    </a>
     <nav class="nav-links">
       <a href="#about">About</a>
       <a href="#classes">Classes</a>
@@ -23,9 +25,7 @@
     <!-- Hero Section -->
     <section id="about" class="hero glass-card">
       <div class="avatar-ring">
-        <svg class="avatar-icon" viewBox="0 0 24 24">
-          <path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96z"/>
-        </svg>
+        <img src="images/network.svg" alt="Profile Avatar" class="profile-avatar">
       </div>
       <span class="badge">Open for Tutoring & Mentorship</span>
       <h1 class="liquid-title">Building in the Cloud</h1>
@@ -43,12 +43,14 @@
       <h2 class="section-title">Live Classes & Tutoring</h2>
       <div class="cards-grid">
         
-        <!-- Card 1 -->
+        <!-- Card 1: Linux -->
         <article class="class-card glass-card">
-          <div class="card-icon">🐧</div>
+          <div class="card-img-wrapper">
+            <img src="images/class-linux.svg" alt="Linux & Terminal Mastery" class="card-img">
+          </div>
           <span class="card-badge">Foundations</span>
           <h3>Linux & Terminal Mastery</h3>
-          <p>Navigating Ubuntu WSL, mastering Bash scripts, managing permissions, and running terminal editors like Vim and Nano.</p>
+          <p>Navigating Ubuntu WSL, mastering Bash scripts, managing permissions, and running terminal text editors.</p>
           <ul class="card-highlights">
             <li>Shell Navigation & Pipelines</li>
             <li>File Permissions & Users</li>
@@ -56,9 +58,11 @@
           </ul>
         </article>
 
-        <!-- Card 2 -->
+        <!-- Card 2: Git & CI/CD -->
         <article class="class-card glass-card">
-          <div class="card-icon">🔄</div>
+          <div class="card-img-wrapper">
+            <img src="images/class-git.svg" alt="Git & Automated CI/CD" class="card-img">
+          </div>
           <span class="card-badge">DevOps</span>
           <h3>Git & Automated CI/CD</h3>
           <p>Version control best practices, branch workflows, PAT authentication, and automating site builds via GitHub Actions.</p>
@@ -69,9 +73,11 @@
           </ul>
         </article>
 
-        <!-- Card 3 -->
+        <!-- Card 3: Cloud Hosting -->
         <article class="class-card glass-card">
-          <div class="card-icon">☁️</div>
+          <div class="card-img-wrapper">
+            <img src="images/class-cloud.svg" alt="Static Sites & Cloud Hosting" class="card-img">
+          </div>
           <span class="card-badge">Cloud</span>
           <h3>Static Sites & Cloud Hosting</h3>
           <p>Architecting production-ready frontends with HTML5, CSS Glassmorphism, domain routing, and CDN edge delivery.</p>
