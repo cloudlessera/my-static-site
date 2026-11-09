@@ -5,52 +5,86 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
-  background-color: #0f172a;
-  color: #f8fafc;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  padding: 20px;
+  background-color: #070b14;
+  /* Ambient glowing light orbs behind the glass */
+  background-image: 
+    radial-gradient(circle at 20% 25%, rgba(56, 189, 248, 0.25) 0%, transparent 45%),
+    radial-gradient(circle at 80% 75%, rgba(168, 85, 247, 0.25) 0%, transparent 45%);
 }
 
-.card {
-  background-color: #1e293b;
-  border-radius: 12px;
-  padding: 32px;
-  max-width: 450px;
+.glass-card {
+  /* Translucent surface: 60% opaque dark slate */
+  background: rgba(15, 23, 42, 0.6);
+  /* The frosted glass blur effect */
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  /* Glass edge reflection */
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 24px;
+  padding: 44px 36px;
+  max-width: 460px;
+  width: 100%;
   text-align: center;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.15);
 }
 
-.badge {
+.glass-badge {
   display: inline-block;
-  background-color: #0284c7;
+  background: rgba(56, 189, 248, 0.15);
+  border: 1px solid rgba(56, 189, 248, 0.35);
+  color: #38bdf8;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding: 6px 14px;
+  border-radius: 9999px;
+  margin-bottom: 20px;
+  backdrop-filter: blur(8px);
+}
+
+/* Liquid Gradient Text */
+.liquid-text {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 14px;
+  background: linear-gradient(135deg, #38bdf8 0%, #a855f7 50%, #f43f5e 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.glass-description {
+  color: #cbd5e1;
+  font-size: 0.95rem;
+  line-height: 1.7;
+  margin-bottom: 28px;
+}
+
+.btn-glass {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.2);
   color: #ffffff;
-  font-size: 12px;
-  font-weight: bold;
-  padding: 4px 12px;
-  border-radius: 20px;
-  margin-bottom: 16px;
-}
-
-h1 {
-  font-size: 24px;
-  margin-bottom: 12px;
-}
-
-p {
-  color: #94a3b8;
-  line-height: 1.6;
-  margin-bottom: 24px;
-}
-
-.btn {
-  display: inline-block;
-  background-color: #38bdf8;
-  color: #0f172a;
   text-decoration: none;
-  font-weight: bold;
-  padding: 12px 24px;
-  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  padding: 12px 28px;
+  border-radius: 12px;
+  backdrop-filter: blur(8px);
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn-glass:hover {
+  background: rgba(56, 189, 248, 0.25);
+  border-color: rgba(56, 189, 248, 0.6);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(56, 189, 248, 0.3);
 }
